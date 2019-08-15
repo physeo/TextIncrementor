@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextIncrementor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Text Incrementor" Height="450" Width="800">
     <Grid>
         <Border BorderBrush="Black" BorderThickness="2" Margin="191,37,19,35">
             <TextBox x:Name="txtText" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
