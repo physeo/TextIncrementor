@@ -1,0 +1,24 @@
+﻿<Window x:Class="TextIncrementor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextIncrementor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="2" Margin="191,37,19,35">
+            <TextBox x:Name="txtText" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        </Border>
+        <Label Content="Initial Number:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtNumber" HorizontalAlignment="Left" Height="23" Margin="135,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnIncrement" Content="Increment" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="75" Click="BtnIncrement_Click"/>
+        <Label Content="Increment Amount:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtAmount" HorizontalAlignment="Left" Height="23" Margin="135,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25"/>
+        <Label Content="OR List:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="2" Margin="10,96,632,35">
+            <TextBox x:Name="txtList" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        </Border>
+        <Label Content="Add Text with {0} in spaces to be replaced" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
